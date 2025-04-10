@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Istoric Interactiv</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #555;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        .entry {
+            padding: 20px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .entry.left {
+            left: 0;
+        }
+        .entry.right {
+            left: 50%;
+        }
+        .entry::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: #fff;
+            border: 3px solid #444;
+            top: 30px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .entry.right::before {
+            left: -10px;
+        }
+        .entry h3 {
+            margin-top: 0;
+        }
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .entry {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .entry.right {
+                left: 0%;
+            }
+            .entry.right::before {
+                left: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Linia Timpului Volkswagen</h1>
+    <nav>
+        <a href="index.html">Acasă</a>
+        <a href="despre.html">Despre</a>
+        <a href="modele.html">Modele</a>
+        <a href="galerie.html">Galerie</a>
+    </nav>
+</header>
+<main>
+    <div class="timeline">
+        <div class="entry left">
+            <h3>1938 - Lansarea Beetle</h3>
+            <p>Primul model popular proiectat de Ferdinand Porsche.</p>
+        </div>
+        <div class="entry right">
+            <h3>1950 - Type 2 Bus</h3>
+            <p>Simbolul libertății și al generației hippie.</p>
+        </div>
+        <div class="entry left">
+            <h3>1974 - Golf MK1</h3>
+            <p>Începutul unei noi epoci pentru Volkswagen.</p>
+        </div>
+        <div class="entry right">
+            <h3>2020 - ID.3</h3>
+            <p>Lansarea liniei electrice pentru viitor.</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2025 Volkswagen România</p>
+</footer>
+</body>
+</html>

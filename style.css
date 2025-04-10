@@ -1,0 +1,68 @@
+
+body {
+    background-color: #111;
+    color: #e0e0e0;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #fff;
+}
+main {
+    padding: 20px;
+}
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+section {
+    border-bottom: 1px solid #333;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+article {
+    margin-top: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.tabs {
+    text-align: center;
+    margin: 20px 0;
+}
+.tabs button {
+    background-color: #222;
+    border: 1px solid #444;
+    color: #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+}
+.tabs button:hover {
+    background-color: #333;
+    color: #fff;
+}
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
